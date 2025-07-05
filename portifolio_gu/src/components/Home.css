@@ -64,6 +64,7 @@ body, html {
   font-weight: 500;
   font-size: 1rem;
   font-family: 'Roboto', sans-serif;
+  cursor: default;
 }
 
 .tech-card:hover {
@@ -78,9 +79,11 @@ body, html {
 
 .icon-react { color: #61dafb; }
 .icon-js { color: #f7df1e; }
+.icon-ts { color: #3178c6; } 
 .icon-html { color: #e34c26; }
 .icon-css { color: #264de4; }
 .icon-node { color: #68a063; }
+.icon-Type  {color:#3178c6}
 
 .home-btn {
   background-color: #00d8ff;
@@ -97,6 +100,7 @@ body, html {
   align-items: center;
   gap: 8px;
   text-transform: uppercase;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .home-btn:hover {

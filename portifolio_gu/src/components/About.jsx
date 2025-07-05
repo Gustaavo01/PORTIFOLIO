@@ -3,6 +3,7 @@ import './About.css';
 import { FaUser, FaBullseye, FaLightbulb } from 'react-icons/fa';
 import { FaReact, FaHtml5, FaCss3Alt, FaNodeJs } from 'react-icons/fa';
 import { SiJavascript } from 'react-icons/si';
+import { SiTypescript } from 'react-icons/si';
 
 function About() {
   const techs = [
@@ -11,6 +12,7 @@ function About() {
     { icon: <FaHtml5 className="icon icon-html" />, name: 'HTML' },
     { icon: <FaCss3Alt className="icon icon-css" />, name: 'CSS' },
     { icon: <FaNodeJs className="icon icon-node" />, name: 'Node.js' },
+    { icon: <SiTypescript className="icon icon-Type" />, name: 'Typescript' },
   ];
 
   return (
