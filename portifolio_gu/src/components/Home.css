@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s ease all;
+}
+
+body, html {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.home-title {
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.highlight {
+  color: #00d8ff;
+  font-weight: 700;
+}
+
+.home-subtitle {
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  color: #ccc;
+  margin-bottom: 2.5rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+.tech-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border: 1px solid #00d8ff;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.tech-card:hover {
+  transform: translateY(-4px);
+  background-color: rgba(0, 216, 255, 0.05);
+  box-shadow: 0 0 10px rgba(0, 216, 255, 0.2);
+}
+
+.icon {
+  font-size: 1.4rem;
+}
+
+.icon-react { color: #61dafb; }
+.icon-js { color: #f7df1e; }
+.icon-html { color: #e34c26; }
+.icon-css { color: #264de4; }
+.icon-node { color: #68a063; }
+
+.home-btn {
+  background-color: #00d8ff;
+  color: #0f2027;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 216, 255, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-transform: uppercase;
+}
+
+.home-btn:hover {
+  background-color: #00aacc;
+  box-shadow: 0 0 20px #00d8ff;
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .tech-stack {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
